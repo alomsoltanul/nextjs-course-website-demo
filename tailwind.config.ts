@@ -6,7 +6,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode:'class',
+  darkMode: 'class',
   theme: {
     extend: {
       animation: {
@@ -19,7 +19,7 @@ export default {
             transform: "translate(-72%, -62%) scale(0.5)",
           },
           "100%": {
-            opacity:'1',
+            opacity: '1',
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
@@ -28,8 +28,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      
+
     },
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 } satisfies Config;
