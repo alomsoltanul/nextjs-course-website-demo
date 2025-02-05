@@ -1,6 +1,7 @@
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Image from "next/image";
 import Link from "next/link";
+import Jordan from "../../assests/coming-soon.png"
 
 const fetchCourse = async () => {
     const res = await fetch("http://localhost:3000/data.json", {
@@ -48,7 +49,7 @@ const AllCoursesServer = async () => {
                             <CardItem translateZ="100" className="w-full mt-4">
                                 {course.image && (
                                     <Image
-                                        src={course.image}
+                                        src={Jordan}
                                         height={1000}
                                         width={1000}
                                         className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
